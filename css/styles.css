@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(rgba(64, 205, 182, 0.5), rgba(26, 156, 212, 0.5)), url('home.jpg');
+    background-image: linear-gradient(rgba(64, 205, 182, 0.5), rgba(26, 156, 212, 0.5)), url('../home.jpg');
     overflow: hidden;
 }
 header {
