@@ -47,7 +47,7 @@ header {
 }
 
 .profile-picture {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .profile-picture img {
@@ -59,7 +59,7 @@ header {
 
 .content {
     background-color: rgba(149, 133, 237, 0.5);
-    top: 85%;
+    top: 110%;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
