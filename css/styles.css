@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #474855;
+    color: #590bea; /* Light green text color */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(64, 205, 182, 0.5), rgba(26, 156, 212, 0.5)), url('home.jpg');
+    overflow: hidden;
+}
+header {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    border-radius: 10%;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+.content {
+    background-color: rgba(149, 133, 237, 0.5);
+    top: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.navlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlist a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #14b6e7; /* Light blue border */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.typing-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.navlist {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.navlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navlist li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.navlist a {
+    color: #8c8bc3;
+    text-decoration: none;
+}
+
+.navlist a:hover {
+    color: #fff;
+}
+
+/* Section Styles */
+
+section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.education-container,
+.skills-container,
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education-card,
+.skill-card,
+.contact-card {
+    background-color: #cfb1e4;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 40px); /* Adjusted for margin */
+}
+
+.education-card h3,
+.skill-card h3,
+.contact-card h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-card i,
+.contact-card i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #70807b;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+/* Responsive Design for 1080px */
+/* Existing styles remain unchanged above this point */
+
+/* Responsive Design for 1920x1080 resolution */
+@media only screen and (min-width: 1920px) and (min-height: 1080px) {
+    .container {
+        padding: 40px; /* Increase padding for larger screens */
+    }
+
+    .profile-picture {
+        width: 180px; /* Larger profile picture size */
+        height: 180px; /* Larger profile picture size */
+    }
+
+    .content {
+        padding: 30px; /* Increase padding for content */
+        width: 70%; /* Reduce width for better layout on large screens */
+    }
+
+    .typing-text {
+        font-size: 48px; /* Larger font size for better visibility */
+    }
+
+    .navlist a {
+        font-size: 24px; /* Larger font size for navigation links */
+    }
+
+    .education-card,
+    .skill-card,
+    .contact-card {
+        width: calc(25% - 40px); /* Four cards per row with spacing */
+        margin: 20px; /* Maintain margin for spacing */
+    }
+
+    .social-icons a {
+        margin-right: 20px; /* Adjust margin for social icons */
+        font-size: 28px; /* Larger font size for social icons */
+    }
+}
+
+/* Responsive Design for 1080px */
+@media only screen and (max-width: 1080px) {
+    .container {
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .profile-picture {
+        width: 120px; /* Adjust profile picture size */
+        height: 120px; /* Adjust profile picture size */
+    }
+
+    .content {
+        padding: 15px; /* Adjust padding */
+        width: 90%; /* Ensure content is not too wide */
+    }
+
+    .typing-text {
+        font-size: 28px; /* Adjust font size for better readability */
+    }
+
+    .navlist li {
+        margin-right: 15px; /* Adjust margin for navigation items */
+    }
+
+    .navlist a {
+        font-size: 18px; /* Adjust font size for navigation links */
+    }
+
+    .education-card,
+    .skill-card,
+    .contact-card {
+        width: calc(50% - 40px); /* Two cards per row */
+        margin: 10px; /* Adjust margin for spacing */
+    }
+
+    .social-icons a {
+        margin-right: 15px; /* Adjust margin for social icons */
+        font-size: 22px; /* Adjust font size for social icons */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .profile-picture {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+
+    .content {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .typing-text {
+        font-size: 24px;
+    }
+
+    .navlist li {
+        margin-right: 10px;
+    }
+
+    .navlist a {
+        font-size: 16px;
+    }
+
+    .education-card,
+    .skill-card,
+    .contact-card {
+        width: calc(50% - 40px); /* Adjusted for margin */
+    }
+
+    .social-icons a {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    .content {
+        padding: 5px;
+        width: 95%;
+    }
+
+    .typing-text {
+        font-size: 18px;
+    }
+
+    .navlist li {
+        margin-right: 5px;
+    }
+
+    .navlist a {
+        font-size: 14px;
+    }
+
+    .education-card,
+    .skill-card,
+    .contact-card {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Adjust
+                margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .social-icons a {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+}
+
+/* Additional styles for better accessibility and usability */
+a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:focus, a:hover {
+    outline: none;
+    text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+/* Ensure that the text is readable on all backgrounds */
+.content p, .content h2, .content h3 {
+    color: #80e7ae; /* Ensure text color contrasts well with background */
+}
+
+/* Add some padding to sections for better spacing */
+section {
+    padding: 20px;
+}
+
+/* Ensure that the profile picture is responsive */
+.profile-picture img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Flexbox adjustments for better alignment */
+.education-container,
+.skills-container,
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+}
+
+@media only screen and (min-width: 769px) {
+    .education-container,
+    .skills-container,
+    .contact-container {
+        flex-direction: row; /* Row layout for larger screens */
+        justify-content: center; /* Center items in the row */
+    }
+
+    .education-card,
+    .skill-card,
+    .contact-card {
+        width: calc(33.33% - 40px); /* Three cards per row with spacing */
+        margin: 20px; /* Maintain margin for spacing */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center social icons */
+    }
+
+    .typing-text {
+        font-size: 36px; /* Larger font size for better visibility */
+    }
+
+    .navlist a {
+        font-size: 20px; /* Larger font size for navigation links */
+    }
+}
